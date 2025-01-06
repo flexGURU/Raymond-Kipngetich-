@@ -1,0 +1,79 @@
+<div 
+  *ngIf="isOpen" 
+  class="fixed inset-0 bg-black/50 transition-opacity duration-300"
+  style="top: 88px;"
+  (click)="closeMenu()"
+></div>
+
+<div class="font-body p-5 bg-nav text-slate-200 shadow-xl">
+  <div class="flex flex-row justify-between md:justify-evenly items-center">
+    <!-- Logo Name -->
+    <div>
+      <p class="font-bold text-lg">RAYMOND KIPNG’ETICH</p>
+    </div>
+
+    <!-- Toggle Icons for Mobile -->
+    <div class="md:hidden cursor-pointer" (click)="toggle()">
+      <i
+        class="fa-regular fa-circle-xmark transition duration-500 text-3xl"
+        [ngClass]="{ 'hidden': !isOpen }"
+      ></i>
+      <i
+        class="fa-solid fa-list transition duration-500 text-3xl"
+        [ngClass]="{ 'hidden': isOpen }"
+      ></i>
+    </div>
+
+    <!-- Navigation Menu for Larger Screens -->
+    <div class="hidden md:block">
+      <ul class="flex gap-8">
+        <li>
+          <a href="" routerLink="" fragment="about" class="navbar">About Me</a>
+        </li>
+        <li>
+          <a href="" routerLink="" fragment="work" class="navbar">Work</a>
+        </li>
+        <li>
+          <a href="" routerLink="" fragment="skills" class="navbar">Skills</a>
+        </li>
+        <li>
+          <a href="" routerLink="" fragment="achievements" class="navbar">Achievements</a>
+        </li>
+        <li>
+          <a href="" routerLink="" fragment="gallery" class="navbar">Gallery</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Button for Larger Screens -->
+    <div class="hidden md:block">
+      <button class="btn">
+        <a href="" routerLink="" fragment="contact" class="">Let's Talk</a>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Navigation Menu -->
+  <div
+    *ngIf="isOpen"
+    class="font-body text-slate-200 bg-prim p-4 shadow-2xl md:hidden fixed inset-x-0  z-50"
+    >
+    <ul class="flex flex-col gap-8">
+      <li>
+        <a href="" routerLink="" fragment="about" class="navbar">About Me</a>
+      </li>
+      <li>
+        <a href="" routerLink="" fragment="work" class="navbar">Work</a>
+      </li>
+      <li>
+        <a href="" routerLink="" fragment="skills" class="navbar">Skills</a>
+      </li>
+      <li>
+        <a href="" routerLink="" fragment="achievements" class="navbar">Achievements</a>
+      </li>
+      <li>
+        <a href="" routerLink="" fragment="gallery" class="navbar">Gallery</a>
+      </li>
+    </ul>
+  </div>
+</div>

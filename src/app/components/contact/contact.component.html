@@ -1,0 +1,140 @@
+<div class="font-body p-4 text-slate-200 bg-nav h-auto flex flex-col justify-center ">
+
+        
+    <div class="flex justify-center items-center gap-5 mt-16 mb-10 ">
+        <i class="fa-solid fa-address-card title-icon"></i>
+        
+        <div class="flex flex-col items-center">
+            <h1 class="title">Get In Touch</h1>
+                <hr class="w-1/2 mt-3 border-2 rounded-sm">
+        </div>
+    </div>
+
+   <div class="flex justify-center">
+    <div class="w-full md:w-1/2 border border-lightprim rounded-xl bg-prim p-8">
+
+        <form [formGroup]="contactDetails"  (ngSubmit)="submit()" class="flex flex-col gap-4">
+            <div class="flex flex-col gap-1">
+                <label for="name">Your Name</label>
+                <input 
+                type="text" 
+                id="name" 
+                required
+                placeholder="Your Name *" 
+                class="input-form"
+                formControlName="name"
+                [ngClass]="{'is-invalid': formControls['name'].touched && formControls['name'].invalid}"
+                >
+                <div class="flex flex-row justify-between mx-3 text-sm" *ngIf="formControls['name'].touched && formControls['name'].invalid">
+                    <p class="text-red-500 ">Name is Required </p>
+                    <p class="text-red-500">!</p>
+                </div>
+        
+            </div>
+            
+            <div class="flex flex-col gap-1">
+                <label for="email">Your Email</label>
+                <input 
+                type="email" 
+                id="email" 
+                placeholder="Your Email *"
+                required
+                class="input-form"
+                formControlName="email"
+                [ngClass]="{'is-invalid': formControls['email'].touched && formControls['email'].invalid}"
+                >
+
+                <div class="flex flex-row justify-between mx-3 text-sm" *ngIf="formControls['email'].touched && formControls['email'].invalid">
+                    <p class="text-red-500 ">Email is Required </p>
+                    <p class="text-red-500">!</p>
+                </div>
+            </div>                
+            <div class="flex flex-col gap-1">
+                <label for="subject">Subject</label>
+                <input 
+                type="text" 
+                id="subject" 
+                placeholder="Subject *" 
+                required
+                class="input-form"
+                formControlName="subject"
+                [ngClass]="{'is-invalid': formControls['subject'].touched && formControls['subject'].invalid}"
+                >
+                <div class="flex flex-row justify-between mx-3 text-sm" *ngIf="formControls['subject'].touched && formControls['subject'].invalid">
+                    <p class="text-red-500 ">Subject is Required </p>
+                    <p class="text-red-500">!</p>
+                </div>
+            </div>
+    
+            <div class="flex flex-col gap-1">
+                <label for="message">Your Message</label>
+                <textarea 
+                
+                id="message" 
+                required
+                placeholder="Message *" 
+                class="input-form h-20"
+                formControlName="message"
+                [ngClass]="{'is-invalid': formControls['message'].touched && formControls['message'].invalid}"
+                ></textarea>
+            <div class="flex flex-row justify-between mx-3 text-sm" *ngIf="formControls['message'].touched && formControls['message'].invalid">
+                <p class="text-red-500 ">Message is Required </p>
+                <p class="text-red-500">!</p>
+            </div>
+            </div>
+
+            <div class="flex justify-center">
+                <button [disabled]="contactDetails.invalid" class="btn w-full cursor-pointer flex flex-row justify-center items-center gap-2">
+                    <i class="fa-solid fa-paper-plane text-xl"></i>
+                    <p> Send Message</p>
+                </button>
+            </div>
+
+        </form>
+
+
+
+    </div>
+
+   
+   </div>
+
+  <div class="flex justify-center">
+    <div class="mt-10 my-20 w-3/4 ">
+        <div class="text-center">
+         <h3 class="text-3xl">Let's Connect</h3>
+        </div>
+ 
+        <div class="flex flex-col md:flex-row justify-evenly md:items-center gap-4 p-4">
+ 
+             <div class="flex  items-center gap-4 ">
+                 <i class="fa-solid fa-envelope contact"></i>
+                 <p>raykatam3&#64;gmail.com</p>
+ 
+             </div>
+             <div class="flex  items-center gap-4">
+                 <i class="fa-solid fa-phone  contact"></i>
+                 +254708759903
+             </div>
+             <div class="flex justify-between md:gap-16">
+                <i class="fa-brands fa-x-twitter text-3xl w-14 p-2 socials" (click)="goToUrl('https://x.com/RaymondKipnget')"></i>
+                <i class="fa-brands fa-linkedin-in text-3xl w-14 p-2 socials" (click)="goToUrl('https://www.linkedin.com/in/raymond-kipng-etich-398435211/')"></i>
+             </div>
+             
+ 
+        </div>
+    </div>
+  </div>
+
+  <hr class="text-slate-700 border border-prim">
+
+  <div class="my-10 text-center ">
+    <p class="text-slate-400">© 2025 Raymond Kipng'etich. All rights reserved.</p>
+
+  </div>
+
+
+  
+            
+
+</div>

@@ -1,0 +1,66 @@
+<div class="font-body md:p-4 text-slate-200 work h-auto flex items-center justify-center">
+
+    <div class="mt-20 mb-10 w-full">
+  
+      <!-- Header Section -->
+      <div class="flex justify-center items-center gap-5 my-5">
+        <i class="fa-solid fa-briefcase text-3xl text-white"></i>
+  
+        <div class="flex flex-col items-center">
+          <h1 class="text-3xl font-semibold text-center md:text-left">Work Experience</h1>
+          <hr class="w-16 md:w-1/2 mt-3 border-2 rounded-sm">
+        </div>
+      </div>
+  
+      <!-- Content Section -->
+      <div class="md:w-3/4 mt-10 mx-auto px-4">
+        
+        <div 
+        *ngFor="let work of workExp"
+        class="work-card grid grid-cols-1 md:grid-cols-12 gap-4 bg-slate-800 p-5 rounded-md shadow-md">
+  
+          <!-- Image Section -->
+          <div class="col-span-3 hidden md:flex items-center justify-center">
+            <img 
+              src="../../../assets/huawei.png"
+              alt="Huawei Logo"
+              class="rounded-sm w-16 md:w-20">
+          </div>
+  
+          <!-- Text Content Section -->
+          <div class="col-span-12 md:col-span-7">
+            <div class="flex flex-col gap-4">
+              <div class="flex flex-row justify-between">
+                <p class="text-xl md:text-3xl font-bold"> {{work.company}} </p>
+                <div class="block md:hidden col-span-2 items-center justify-center">
+                    <div class="bg-slate-200 text-black text-xs md:text-sm p-2 text-center rounded-full">
+                      2021 - Present
+                    </div>
+                  </div>
+              </div>
+              <p class="text-md md:text-xl text-slate-300 font-semibold"> {{work.position}} </p>
+  
+              <div class="flex items-start" *ngFor="let high of work.highlights">
+                <p class="text-sm md:text-base mt-1 leading-relaxed">
+                <i class="fa-solid fa-arrow-trend-up mr-2 text-slate-400"></i>
+                {{ high }}
+                </p>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Date Section -->
+          <div class="hidden md:flex col-span-2 items-center justify-center">
+            <div class="bg-slate-200 text-black text-xs md:text-sm p-2 text-center rounded-full">
+              2021 - Present
+            </div>
+          </div>
+  
+        </div>
+  
+      </div>
+  
+    </div>
+  
+  </div>
+  

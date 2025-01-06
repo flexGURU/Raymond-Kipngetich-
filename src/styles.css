@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Fredoka:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lexend:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.btn {
+    @apply text-slate-200 border rounded-full p-4 bg-[#526c5e]  hover:text-gray-800 hover:bg-white;
+}
+
+.socials {
+    @apply text-3xl w-14 p-2 border  bg-[#526c5e]  cursor-pointer rounded-full text-center hover:transition hover:text-gray-700 hover:bg-slate-200 hover:ease-in-out hover:scale-110 hover:duration-500 ;
+}
+
+.work {
+    @apply bg-gradient-to-r from-nav  to-prim;
+}
+
+.work-card {
+    @apply mt-5 grid grid-cols-12 border border-nav bg-[#364a3f] p-4  hover:border-slate-400 transition-all duration-300  border-slate-700/30 hover:shadow-xl hover:duration-500;
+}
+
+.title-icon {
+    @apply text-3xl text-white;
+}
+.title {
+    @apply text-3xl font-semibold;
+}
+
+.skills-card {
+    @apply bg-prim p-6 rounded-lg border border-slate-700/30 hover:shadow-xl transition-all duration-300;
+}
+
+.input-form {
+    @apply border bg-nav rounded-xl px-4 py-2 my-2;
+}
+
+.contact {
+    @apply text-3xl text-center w-16 border rounded-full p-3;
+}
+
+.gallery {
+    @apply bg-gradient-to-r from-prim  to-nav;
+}
+
+.navbar {
+    @apply relative py-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-slate-300 after:transition-all after:duration-300 hover:after:w-full;
+}
+
