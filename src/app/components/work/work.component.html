@@ -1,4 +1,4 @@
-<div class="font-body md:p-4 text-slate-200 work h-auto flex items-center justify-center">
+<div class="font-body md:p-4 text-slate-200 h-auto bg-nav flex items-center justify-center">
 
     <div class="mt-20 mb-10 w-full">
   
@@ -17,7 +17,7 @@
         
         <div 
         *ngFor="let work of workExp"
-        class="work-card grid grid-cols-1 md:grid-cols-12 gap-4 bg-slate-800 p-5 rounded-md shadow-md">
+        class="work-card grid grid-cols-1 md:grid-cols-12 gap-4  p-5 rounded-md shadow-md">
   
           <!-- Image Section -->
           <div class="col-span-3 hidden md:flex items-center justify-center">
@@ -34,7 +34,7 @@
                 <p class="text-xl md:text-3xl font-bold"> {{work.company}} </p>
                 <div class="block md:hidden col-span-2 items-center justify-center">
                     <div class="bg-slate-200 text-black text-xs md:text-sm p-2 text-center rounded-full">
-                      2021 - Present
+                      {{ work.duration }}
                     </div>
                   </div>
               </div>
@@ -52,7 +52,7 @@
           <!-- Date Section -->
           <div class="hidden md:flex col-span-2 items-center justify-center">
             <div class="bg-slate-200 text-black text-xs md:text-sm p-2 text-center rounded-full">
-              2021 - Present
+              {{ work.duration }}
             </div>
           </div>
   

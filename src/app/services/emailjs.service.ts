@@ -23,7 +23,7 @@ export class EmailjsService {
           from_email: contactDetails.value.email,
           subject: contactDetails.value.subject,
           message: contactDetails.value.message,
-          to_email: "raykatam3@gmail.com",
+          to_email: "raymond.kipngetich1@gmail.com",
         }
       );
       

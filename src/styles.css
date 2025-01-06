@@ -7,11 +7,11 @@
 
 
 .btn {
-    @apply text-slate-200 border rounded-full p-4 bg-[#526c5e]  hover:text-gray-800 hover:bg-white;
+    @apply text-white border rounded-full p-4 bg-[#1e90ff]  hover:text-black hover:bg-white;
 }
 
 .socials {
-    @apply text-3xl w-14 p-2 border  bg-[#526c5e]  cursor-pointer rounded-full text-center hover:transition hover:text-gray-700 hover:bg-slate-200 hover:ease-in-out hover:scale-110 hover:duration-500 ;
+    @apply text-3xl w-14 p-2 border  bg-[#1e90ff]  cursor-pointer rounded-full text-center hover:transition hover:text-gray-700 hover:bg-slate-200 hover:ease-in-out hover:scale-110 hover:duration-500 ;
 }
 
 .work {
@@ -19,7 +19,7 @@
 }
 
 .work-card {
-    @apply mt-5 grid grid-cols-12 border border-nav bg-[#364a3f] p-4  hover:border-slate-400 transition-all duration-300  border-slate-700/30 hover:shadow-xl hover:duration-500;
+    @apply mt-5 grid grid-cols-12 border border-nav bg-prim p-4  hover:border-slate-400 transition-all duration-300  border-slate-700/30 hover:shadow-xl hover:duration-500;
 }
 
 .title-icon {
@@ -47,5 +47,9 @@
 
 .navbar {
     @apply relative py-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-slate-300 after:transition-all after:duration-300 hover:after:w-full;
+}
+
+.card {
+    @apply bg-[#052b65];
 }
 

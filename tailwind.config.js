@@ -9,9 +9,9 @@ module.exports = {
         body: ['Lexend', 'sans-serif'],
       },
       colors: {
-        nav: "#2f4f3f",
-        prim: "#28322c",
-        lightprim: "#60786b",
+        nav: "#052c65",
+        prim: "#10162a",
+        lightprim: "#00468b",
       },
     },
   },
