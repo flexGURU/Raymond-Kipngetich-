@@ -53,3 +53,7 @@
     @apply bg-[#052b65];
 }
 
+.consult {
+    @apply bg-black;
+}
+

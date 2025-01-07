@@ -12,6 +12,7 @@ module.exports = {
         nav: "#052c65",
         prim: "#10162a",
         lightprim: "#00468b",
+        hr: "#0d2552"
       },
     },
   },

@@ -1,9 +1,9 @@
 <div class="font-body p-4 text-slate-200 work min-h-screen flex items-center justify-center mt-10">
     <div class="grid grid-cols-1 md:grid-cols-7 md:w-3/4 mx-auto gap-4">
   
-        <div class="col-span-3 flex flex-col justify-center  md:p-8 mt-10 space-y-8">
+        <div class="col-span-3 flex flex-col justify-center md:p-8 mt-10 space-y-8">
             <div class="space-y-2">
-                <span class="text-xl text-slate-400 tracking-widest block">Hello! I'm</span>
+                <span class="text-xl text-slate-500 tracking-widest block">Hello! I'm</span>
                 <h1 class="text-5xl font-bold leading-tight tracking-wide">
                     <span class="text-6xl bg-gradient-to-r from-slate-200 to-slate-300 text-transparent bg-clip-text">R</span>aymond 
                     <span class="text-6xl bg-gradient-to-r from-slate-200 to-slate-300 text-transparent bg-clip-text">K</span>ipng'etich
@@ -11,13 +11,16 @@
             </div>
 
             <div class="col-span-4 flex justify-center items-center">
-                <img
-                  class="md:hidden h-[300px] w-[300px] rounded-full border-2"
-                  src="../../../assets/profile.jpg"
-                  alt="Responsive Image"
-                />
+                <div class="relative w-[300px] h-[300px] md:hidden rounded-full overflow-hidden border">
+                  <img
+                    class="w-full h-full "
+                    src="../../../assets/profile.jpg"
+                    alt="Responsive Image"
+                  />
+                </div>
               </div>
               
+          
         
             <div class="space-y-6">
                 <h2 class="text-2xl font-semibold text-slate-300 border-l-4 border-[] pl-4">
@@ -30,20 +33,24 @@
             </div>
         
             <div class="pt-6 flex items-center justify-between">
-         
                 <a href="../../../assets/Raymond Solutions Architect-CV-3.pdf" class="btn flex gap-2" download="">
                     <span class="font-semibold">Get Resume</span>
                     <i class="fa-solid fa-download"></i>
                 </a>
 
-                    <i class="fa-brands fa-x-twitter text-3xl w-14 p-2 socials" (click)="goToUrl('https://x.com/RaymondKipnget')"></i>
-                    <i class="fa-brands fa-linkedin-in text-3xl w-14 p-2 socials" (click)="goToUrl('https://www.linkedin.com/in/raymond-kipng-etich-398435211/')"></i>
+                <i class="fa-brands fa-x-twitter text-3xl w-14 p-2 socials" (click)="goToUrl('https://x.com/RaymondKipnget')"></i>
+                <i class="fa-brands fa-linkedin-in text-3xl w-14 p-2 socials" (click)="goToUrl('https://www.linkedin.com/in/raymond-kipng-etich-398435211/')"></i>
             </div>
         </div>
   
-        <div class="col-span-4 flex justify-center items-center ">
-            <img class="h-[400px] w-[400px] rounded-full border-2 hidden md:block" src="../../../assets/profile.jpg" alt="">
+        <div class="col-span-4 flex flex-col justify-center items-center">
+            <div class="relative w-[400px] h-[400px] overflow-hidden rounded-full border-2 hidden md:block">
+                <img
+                  class="w-full h-full"
+                  src="../../../assets/profile.jpg"
+                  alt=""
+                >
+              </div>
         </div>
     </div>
-  </div>
-  
+</div>
