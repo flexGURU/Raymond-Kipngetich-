@@ -7,15 +7,17 @@ import { SkillsComponent } from "./components/skills/skills.component";
 import { AchievemntsComponent } from "./components/achievemnts/achievemnts.component";
 import { ContactComponent } from "./components/contact/contact.component";
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { ConsultComponent } from "./components/consult/consult.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
-     NavbarComponent, AboutComponent, WorkComponent, 
+    NavbarComponent, AboutComponent, WorkComponent,
     SkillsComponent, AchievemntsComponent, ContactComponent,
-    GalleryComponent
-  ],
+    GalleryComponent,
+    ConsultComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
