@@ -28,28 +28,28 @@
     <div class="hidden md:block">
       <ul class="flex gap-8">
         <li>
-          <a href="" routerLink="" fragment="about" class="navbar">About Me</a>
+          <a (click)="scrollToSection('about')" class="navbar">About Me</a>
         </li>
         <li>
-          <a href="" routerLink="" fragment="work" class="navbar">Work</a>
+          <a (click)="scrollToSection('work')"class="navbar">Work</a>
         </li>
         <li>
-          <a href="" routerLink="" fragment="skills" class="navbar">Skills</a>
+          <a (click)="scrollToSection('skills')" class="navbar">Skills</a>
         </li>
         <li>
-          <a href="" routerLink="" fragment="achievements" class="navbar">Achievements</a>
+          <a (click)="scrollToSection('achievements')" class="navbar">Achievements</a>
         </li>
         <li>
-          <a href="" routerLink="" fragment="gallery" class="navbar">Gallery</a>
+          <a (click)="scrollToSection('gallery')"  class="navbar">Gallery</a>
         </li>
       </ul>
     </div>
 
     <!-- Button for Larger Screens -->
     <div class="hidden md:block">
-      <button class="btn">
-        <a href="" routerLink="" fragment="contact" class="">Let's Talk</a>
-      </button>
+      <a href=""  routerLink="" fragment="contact" >
+        <button class="btn">Let's Talk</button>
+      </a>
     </div>
   </div>
 
@@ -60,19 +60,19 @@
     >
     <ul class="flex flex-col gap-8">
       <li>
-        <a href="" routerLink="" fragment="about" class="navbar">About Me</a>
+        <a (click)="scrollToSection('about')" class="navbar">About Me</a>
       </li>
       <li>
-        <a href="" routerLink="" fragment="work" class="navbar">Work</a>
+        <a (click)="scrollToSection('work')"class="navbar">Work</a>
       </li>
       <li>
-        <a href="" routerLink="" fragment="skills" class="navbar">Skills</a>
+        <a (click)="scrollToSection('skills')" class="navbar">Skills</a>
       </li>
       <li>
-        <a href="" routerLink="" fragment="achievements" class="navbar">Achievements</a>
+        <a (click)="scrollToSection('achievements')" class="navbar">Achievements</a>
       </li>
       <li>
-        <a href="" routerLink="" fragment="gallery" class="navbar">Gallery</a>
+        <a (click)="scrollToSection('gallery')" class="navbar">Gallery</a>
       </li>
     </ul>
   </div>

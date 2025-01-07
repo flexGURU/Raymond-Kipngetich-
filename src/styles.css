@@ -4,7 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
+html {
+    scroll-behavior: smooth;
+  }
+  
 
 .btn {
     @apply text-white border rounded-full p-4 bg-[#1e90ff]  hover:text-black hover:bg-white;
@@ -46,7 +49,7 @@
 }
 
 .navbar {
-    @apply relative py-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-slate-300 after:transition-all after:duration-300 hover:after:w-full;
+    @apply cursor-pointer relative py-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-slate-300 after:transition-all after:duration-300 hover:after:w-full;
 }
 
 .card {

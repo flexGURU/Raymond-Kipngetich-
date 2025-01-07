@@ -3,7 +3,6 @@ import emailjs from '@emailjs/browser';
 import { FormGroup } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
 import { environment } from '../../environments/environment';
-import { EnvironmentConfig } from '../../environments/environment.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -23,7 +22,8 @@ export class EmailjsService {
           from_email: contactDetails.value.email,
           subject: contactDetails.value.subject,
           message: contactDetails.value.message,
-          to_email: "raymond.kipngetich1@gmail.com",
+          to_email: "mukuna.nganga1@students.jkuat.ac.ke",
+          user_email: contactDetails.value.from_name
         }
       );
       

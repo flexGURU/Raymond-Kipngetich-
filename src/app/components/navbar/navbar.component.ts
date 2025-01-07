@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
@@ -10,6 +10,8 @@ import { RouterLink } from '@angular/router';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+
+  constructor(private viewportScroller: ViewportScroller) {}
 
   isOpen: boolean = false
 
@@ -25,6 +27,11 @@ export class NavbarComponent {
   closeMenu(){
     this.isOpen = false;
     document.body.style.overflow = 'auto';
+
+  }
+
+  scrollToSection(fragment){
+    this.viewportScroller.scrollToAnchor(fragment)
 
   }
 
