@@ -1,6 +1,7 @@
 import { CommonModule, ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { SchrollService } from '../../services/schroll.service';
 
 @Component({
   selector: 'app-navbar',
@@ -11,7 +12,7 @@ import { RouterLink } from '@angular/router';
 })
 export class NavbarComponent {
 
-  constructor(private viewportScroller: ViewportScroller) {}
+  constructor(private schrollService: SchrollService) {}
 
   isOpen: boolean = false
 
@@ -31,7 +32,7 @@ export class NavbarComponent {
   }
 
   scrollToSection(fragment){
-    this.viewportScroller.scrollToAnchor(fragment)
+    this.schrollService.scrollToSection(fragment)
 
   }
 

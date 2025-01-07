@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { SchrollService } from '../../services/schroll.service';
 
 @Component({
   selector: 'app-consult',
@@ -10,6 +11,8 @@ import { RouterLink } from '@angular/router';
   styleUrl: './consult.component.css'
 })
 export class ConsultComponent {
+
+  constructor(private schrollService: SchrollService){}
 
    skills = [
     {
@@ -29,6 +32,13 @@ export class ConsultComponent {
       description: "Creating efficient enterprise IT systems to reduce costs and improve performance. Helping organizations build scalable solutions that optimize business processes and technology."
     }
   ];
+
+
+  scrollToSection(fragment){
+    this.schrollService.scrollToSection(fragment)
+
+  }
+
   
 
 }

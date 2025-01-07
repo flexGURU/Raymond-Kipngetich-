@@ -10,7 +10,7 @@ html {
   
 
 .btn {
-    @apply text-white border rounded-full p-4 bg-[#1e90ff]  hover:text-black hover:bg-white;
+    @apply text-white border rounded-full p-4 bg-[#1e90ff]  hover:text-black hover:bg-white cursor-pointer;
 }
 
 .socials {
