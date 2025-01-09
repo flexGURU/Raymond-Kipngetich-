@@ -22,13 +22,12 @@ export class EmailjsService {
           from_email: contactDetails.value.email,
           subject: contactDetails.value.subject,
           message: contactDetails.value.message,
-          to_email: "mukuna.nganga1@students.jkuat.ac.ke",
-          user_email: contactDetails.value.from_name
+          to_email: environment.emailjsconfig.emailAddress,
+          user_email: contactDetails.value.from_name,
         }
       );
       
       contactDetails.reset();
-      console.log(response);
       this.toastr.success('Email sent successfully');
     } catch (error) {
       console.error('Error sending email:', error);

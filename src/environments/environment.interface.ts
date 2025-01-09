@@ -5,5 +5,6 @@ export interface EnvironmentConfig {
       publicKey: string;
       serviceId: string;
       templateId: string;
+      emailAddress: string;
     };
   }
